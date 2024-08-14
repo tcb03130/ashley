@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Pretendard", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: -0.3px;
+  word-break: keep-all;
+  background-color: #000;
+}
+ul,
+li {
+  color: #fff;
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.logo {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 62px;
+  margin-left: 62px;
+}
+.logo img {
+  width: 300px;
+  height: 49px;
+}
+.topmenu {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  /* background-color: #fff; */
+}
+.topmenu a {
+  color: #fff;
+}
+.topmenu ul {
+  position: relative;
+  display: flex;
+  left: 85%;
+  top: -45%;
+  width: 100%;
+  color: #fff;
+  gap: 30px;
+}
+.topmenu ul li {
+}
+/* 검색창 */
+
+.search-container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  /* left: 50%; */
+  display: flex;
+  margin-top: 10px;
+}
+
+#search-input {
+  position: relative;
+  top: -50%;
+  left: 20%;
+  width: 1209px;
+  height: 87px;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 60px;
+  outline: none;
+  background-color: #fff; /* 변경된 부분: 배경색을 흰색으로 설정 */
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#search-button {
+  position: relative;
+  left: 15%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background: transparent;
+  /* margin-left: -50px; */
+  /* background-color: #fff; */
+}
+
+#search-button img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -50px; /* 이미지 위치를 위로 이동 */
+}
+
+/* 메뉴 */
+.menu {
+  width: 100%;
+  height: 120px;
+  background-color: #517266;
+}
+.menu ul {
+  position: relative;
+  top: 45px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.menu ul li {
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* 슬라이드 */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 710px;
+  /* max-width: 800px; */
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.search-container {
+  width: 100%;
+  height: 87px;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  width: 100%;
+  height: 720px;
+  /* min-width: 100%; */
+  box-sizing: border-box;
+}
+
+/* 스와이퍼(슬라이드) 배너 */
+.banner {
+  width: 100%;
+  height: 1164px;
+  background-color: #fff;
+}
+.banner h1 {
+  position: relative;
+  display: block;
+  top: 152px;
+  font-size: 100px;
+  color: #000;
+  font-family: url("https://fonts.googleapis.com/css2?family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+  font-weight: 400;
+  margin-bottom: 107px;
+  margin-left: 54px;
+}
+.swiper-container {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  width: 1866px;
+  height: 651px; /* 슬라이드 높이에 맞춰 설정 */
+  overflow: hidden; /* 넘치는 부분을 숨기기 */
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row; /* 가로 방향으로 슬라이드 배치 */
+  /* height: 100%; */
+  gap: 32px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: calc(100% / 4); /* 한 페이지에 4개의 슬라이드가 보이도록 설정 */
+  box-sizing: border-box;
+}
+
+.swiper-slide img {
+  /* width: 100%; */
+  height: auto; /* 비율 유지하며 이미지 높이 자동 설정 */
+  object-fit: cover; /* 이미지가 슬라이드 영역을 채우도록 설정 */
+}
+
+/* 이벤트 */
+.event {
+  position: relative;
+  width: 100%;
+  height: 996px;
+}
+.event h1 {
+  position: relative;
+  display: block;
+  top: 152px;
+  font-size: 100px;
+  color: #fff;
+  font-family: url("https://fonts.googleapis.com/css2?family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+  font-weight: 400;
+  margin-bottom: 107px;
+  margin-left: 54px;
+}
+.eventimg {
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  gap: 58px;
+  top: 126px;
+  margin-left: 85px;
+}
+
+/* sns */
+
+.snsimg {
+  position: relative;
+  width: 100%;
+  height: 1204px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.snslogo {
+  position: relative;
+  left: 120px;
+  display: block;
+  top: 200px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.snsinner {
+  display: flex; /* 전체를 flex 컨테이너로 설정 */
+  flex-direction: column; /* 자식 요소들을 세로로 배치 */
+  gap: 10px; /* 그룹 간의 간격 설정 */
+}
+
+.group1,
+.group2 {
+  position: relative;
+  display: flex; /* 각 그룹을 flex 컨테이너로 설정 */
+  gap: 10px; /* 이미지 간의 간격 설정 */
+  margin-bottom: 43px;
+  margin-left: 52px;
+  top: 131px;
+}
+
+.group1 img,
+.group2 img {
+  width: 358px;
+  height: 448px;
+  object-fit: cover; /* 이미지가 영역에 맞게 조정됨 */
+}
+.group1 img {
+  position: relative;
+  left: 115px;
+}
+.group2 img {
+  position: relative;
+  left: -250px;
+}
+/* 푸터 */
+footer {
+  position: relative;
+  width: 100%;
+  height: 371px;
+  color: #fff;
+  display: block;
+}
+.bglogo {
+  position: relative;
+  width: 250px;
+  height: 41px;
+  top: 129px;
+  margin-bottom: 21px;
+  margin-left: 102px;
+}
+.pnp {
+  position: relative;
+  top: 150px;
+  margin-left: 102px;
+  font-size: 12px;
+}
+.pnp ul {
+  list-style-type: none; /* 기본 리스트 스타일 제거 */
+  padding: 0; /* 기본 padding 제거 */
+  margin: 0; /* 기본 margin 제거 */
+}
+
+.pnp li {
+  display: inline; /* 리스트 항목을 가로로 배치 */
+  margin-right: 10px; /* 항목 간 간격 */
+}
+
+.pnp li:not(:last-child)::after {
+  content: " | "; /* 항목 사이에 | 부호 추가 */
+  color: #fff; /* 부호 색상 설정 */
+}
+.sns ul {
+  display: flex; /* Flexbox를 사용하여 수평 정렬 */
+  justify-content: flex-end; /* 아이템들을 중앙 정렬 */
+  padding: 0;
+  margin: 0;
+  margin-right: 212px;
+  list-style: none; /* 기본 불릿 제거 */
+}
+
+.sns li {
+  margin: 0 64px; /* 아이템 간의 간격 조정 */
+}
+
+.sns img {
+  width: 60px; /* 이미지 크기 조정 */
+  height: 60px; /* 이미지 크기 조정 */
+}
